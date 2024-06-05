@@ -1,0 +1,38 @@
+/* Content list */
+
+.title-2 {
+  margin-bottom: 20px;
+
+  font-size: 40px;
+  line-height: 1.3;
+  font-weight: bold;
+}
+
+.content-list {
+  margin: 0 auto;
+  max-width: 570px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 40px;
+  text-align: center;
+  & a {
+    color: var(--accent);
+  }
+}
+
+.content-list__item {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.content-list__item p + p {
+  margin-bottom: 0.5em;
+}
+
+@media (max-width: 620px) {
+  .title-2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+}
